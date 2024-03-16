@@ -26,6 +26,8 @@
     />
     <link rel="stylesheet" href="./sass/style.scss" />
     <link rel="stylesheet" href="./sass/general.scss" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header class="header">
@@ -76,14 +78,16 @@
         </div>
 
         <div class="section-body">
-          <div class="product-list">
+          <div class="product-list" data-aos="fade-right">
             <div class="product-item">
               <div class="product-image">
                 <img
                   src="https://picsum.photos/id/10/300/300"
                   alt=""
                   class="product__thumbnail"
-                />
+                /><span class="product-item__sale product-item__sale-green"
+                  >New</span
+                >
               </div>
               <div class="product-info">
                 <h3 class="product__name">
@@ -120,7 +124,9 @@
                   src="https://picsum.photos/id/10/300/300"
                   alt=""
                   class="product__thumbnail"
-                />
+                /><span class="product-item__sale product-item__sale-white"
+                  >-30%</span
+                >
               </div>
               <div class="product-info">
                 <h3 class="product__name">
@@ -465,5 +471,10 @@
         <p class="copyright">2023 furino. All rights reverved</p>
       </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -95,17 +95,19 @@ img {
     color: #ffffff;
 
     font-weight: 500;
-    padding: 14px 7px;
+
     text-align: center;
     border-radius: 50%;
   }
 
   &-item__sale-white {
     background-color: #e97171;
+    padding: 15px 3px;
   }
 
   &-item__sale-green {
     background-color: #2ec1ac;
+    padding: 14px 5px;
   }
 
   &-info {
